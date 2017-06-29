@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Rohit Dureja &bull; Home
+title: Home
 ---
 
 ----

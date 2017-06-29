@@ -2,8 +2,16 @@
 layout: default
 ---
 
-<h1 style="text-align: left;">{{ page.title }}</h1>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+
+<a href="{{ post.url }}"><h1 style="margin-top:0; margin-bottom: 0; text-align: left;">{{ page.title }}</a></h1>
+<time>{{ page.date | date: "%b %-d, %Y" }} • {{ page.author }} </time>
+{% if page.tags %}
+<ul style="padding-left: 0; margin-top: 0; float: right; color: #425469;">
+  {% for tag in page.tags %}
+  <li style="display: inline-block; padding-right: 5px;"><span style="font-size:1.0em; padding-right: 0.4em;" class="glyphicon glyphicon-tags"></span>{{ tag }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
 
 {% if page.series %}
 <hr>
