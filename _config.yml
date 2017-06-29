@@ -23,6 +23,9 @@ gems:
 
 excerpt_separator: <!-- break -->
 
+exclude:
+  - docs/
+
 # Scholar settings
 scholar:
   style: apa
