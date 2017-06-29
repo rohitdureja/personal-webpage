@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-5" style="background-color:transparent; text-align:center; padding-top: 30px;">
+          <img src="images/portrait.jpg" class="img-circle" alt="portrait" width="200px">
+        </div>
+        <div class="col-sm-7" style="background-color:transparent; padding-top: 30px;">
+          <div class="contact">
+            <div class="name"> {{site.title}}</div>
+            <div class="title">Graduate Student</div>
+            <div class="department">Department of Computer Science</div>
+            <div class="affiliation">Iowa State University</div>
+            <div class="social">
+              <ul>
+                <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.github.com/{{ site.github }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.facebook.com/{{site.facebook}}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.twitter.com/{{site.twitter}}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <article>
+          {{ content }}
+        </article>
+      </div>
+    </div>
+      {% include copyright.html %}
+  </main>
+</body>
+
+</html>

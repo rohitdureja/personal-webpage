@@ -1,0 +1,228 @@
+@media (min-width: 800px) {
+.navbar {
+  margin-top: 1.1em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $content-width;
+  background: $navbar;
+}
+}
+
+@media (max-width: 800px) {
+.navbar {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $content-width;
+  background: $navbar;
+}
+}
+
+
+.navbar .navbar-header .navbar-brand{
+  color: $title;
+  -webkit-font-smoothing: antialiased;
+  font-family: $heading-font;
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav a{
+  color: $title;
+  -webkit-font-smoothing: antialiased;
+  font-family: $heading-font;
+  font-weight: bold;
+}
+.navbar .navbar-nav a:hover{
+  color: $navbar;
+  -webkit-font-smoothing: antialiased;
+  font-family: $heading-font;
+  text-decoration: none;
+  background-color: $title;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  color: $font-color;
+  font-family: $font-style;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: $heading-font-color;
+  font-family: $heading-font;
+  line-height: 1.5;
+  text-align: justify;
+}
+h1 {
+  color: $main;
+  font-size: 2.2em;
+  a,
+  a:visited {
+    text-decoration: none;
+    color: $main;
+  }
+}
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/*p {
+  font-size: 11pt;
+}
+*/
+article {
+  font-size: 10pt;
+
+}
+
+main article .post {
+  padding-top: 10pt;
+  font-family: $font-style;
+}
+
+main {
+  padding: 0 15px;
+  max-width: $content-width;
+  margin: 0 auto;
+}
+time {
+  color: #898989;
+}
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+footer {
+  font-family: $heading-font;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+@media (min-width: 800px) {
+footer .about {
+  font-size: 1.2em;
+  text-align: justify;
+  padding-right: 30px;
+  border-right: 1px solid #DCDCDC;
+}
+
+footer .social {
+  text-align: center;
+  padding-top: 40px;
+}
+footer .social ul {
+  padding-left: 0;
+}
+
+}
+
+@media (max-width: 800px) {
+footer .about {
+  font-size: 1.2em;
+  text-align: justify;
+}
+}
+
+footer .copyright {
+  text-align: center;
+  color: grey;
+}
+
+footer .social {
+  text-align: center;
+  padding-top: 40px;
+}
+footer .social ul {
+  padding-left: 0;
+}
+
+footer .social ul li {
+  padding-right: 25px;
+  display: inline-block;
+}
+
+@media (min-width: 800px) {
+.contact {
+  padding-top: 20px;
+  padding-left: 60px;
+  text-align: left;
+  font-family: $heading-font;
+  color: $main;
+}
+
+.contact .social ul {
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+}
+
+@media (max-width: 800px) {
+.contact {
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: center;
+  font-family: $heading-font;
+  color: $main;
+}
+
+.contact .social ul {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+}
+
+.contact .name {
+  font-size: 3em;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact .title {
+  font-size: 1.4em;
+}
+
+.contact .department {
+  font-size: 1.4em;
+}
+
+.contact .affiliation {
+  font-size: 1.4em;
+}
+
+.social ul li {
+  padding-right: 30px;
+  display: inline;
+}
+
+figcaption {
+  font-size: 9pt;
+  padding-top: 5px;
+  color: $main;
+  text-align: center;
+}
+
+figure {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  border-top: 1px solid $main;
+  border-bottom: 1px solid $main;
+}

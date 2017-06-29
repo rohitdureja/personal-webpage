@@ -1,0 +1,33 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Rohit Dureja
+email: dureja@iastate.edu
+description: Personal webpage of Rohit Dureja.
+baseurl: ""
+url: "http://www.rohitdureja.com"
+twitter: rohitdureja
+github:  rohitdureja
+facebook: rohit.dureja
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+include: ['_pages']
+gems: ['jekyll/scholar']
+
+# Scholar settings
+scholar:
+  style: apa
+  locale: en
+
+  source: _bibliography
+  bibliography: references
+  bibliography_template: bib
+
+  sort_by: year
+  order: descending
+

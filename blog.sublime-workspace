@@ -1,0 +1,987 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"nav",
+				"navbar-nav"
+			],
+			[
+				"add",
+				"additive_overall"
+			],
+			[
+				"typica",
+				"typical_overall"
+			],
+			[
+				"cl",
+				"cleaned_name"
+			],
+			[
+				"model",
+				"model_name"
+			],
+			[
+				"pro",
+				"probability"
+			],
+			[
+				"mode",
+				"model_names"
+			],
+			[
+				"prop",
+				"property_lines"
+			],
+			[
+				"all",
+				"all_types"
+			],
+			[
+				"AIG",
+				"AIG_TOOLS"
+			],
+			[
+				"mut",
+				"mut_num"
+			],
+			[
+				"muta",
+				"mutations"
+			],
+			[
+				"rand",
+				"rand_num"
+			],
+			[
+				"and",
+				"andgate_lines"
+			],
+			[
+				"an",
+				"andgate_lines"
+			],
+			[
+				"ang",
+				"andgate_lines_dict"
+			],
+			[
+				"andga",
+				"andgate_lines_dict"
+			],
+			[
+				"proper",
+				"property_lines_dict"
+			],
+			[
+				"li",
+				"lidx"
+			],
+			[
+				"lid",
+				"lindex"
+			],
+			[
+				"find",
+				"find_property_lines"
+			],
+			[
+				"lin",
+				"lindex"
+			],
+			[
+				"out",
+				"output_lines"
+			],
+			[
+				"output",
+				"output_lines"
+			],
+			[
+				"pr",
+				"prop_line"
+			],
+			[
+				"andgate",
+				"andgate_lines"
+			],
+			[
+				"latc",
+				"latch_lines"
+			],
+			[
+				"mu",
+				"mutation_candidate"
+			],
+			[
+				"andgte",
+				"andgate_lines"
+			],
+			[
+				"andgat",
+				"andgate_lines"
+			],
+			[
+				"in",
+				"input_lines"
+			],
+			[
+				"MOD",
+				"MODELS"
+			],
+			[
+				"MO",
+				"MODEL_FOLDER"
+			],
+			[
+				"gen",
+				"generate_args"
+			],
+			[
+				"di",
+				"directory"
+			],
+			[
+				"dire",
+				"directory"
+			],
+			[
+				"fo",
+				"folder_name"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"fi",
+				"filepath"
+			],
+			[
+				"cop",
+				"copy_results"
+			],
+			[
+				"orig",
+				"original_name"
+			],
+			[
+				"PROP",
+				"PROP_FOLDER"
+			],
+			[
+				"ne",
+				"nexus_name"
+			],
+			[
+				"choc",
+				"chockler_name"
+			],
+			[
+				"ori",
+				"original_name"
+			],
+			[
+				"PR",
+				"PROP_FOLDER"
+			],
+			[
+				"templat",
+				"template_contents"
+			],
+			[
+				"ins",
+				"instances"
+			],
+			[
+				"insta",
+				"instance"
+			],
+			[
+				"gene",
+				"generate_args"
+			],
+			[
+				"work",
+				"worker"
+			],
+			[
+				"vmt",
+				"vmt_file"
+			],
+			[
+				"EX",
+				"EXTRACT_VMT_CMD"
+			],
+			[
+				"run",
+				"run_nuXmv"
+			],
+			[
+				"par",
+				"parsed_properties"
+			],
+			[
+				"NOM",
+				"NOMINAL_WORKBENCH"
+			],
+			[
+				"inst",
+				"instance"
+			],
+			[
+				"nom",
+				"nominal_properties"
+			],
+			[
+				"cmd",
+				"cmd_file"
+			],
+			[
+				"smv",
+				"smv_file"
+			],
+			[
+				"NO",
+				"NOMINAL_SMV"
+			],
+			[
+				"ocra",
+				"run_ocra"
+			],
+			[
+				"create",
+				"create_nominal_model"
+			],
+			[
+				"SC",
+				"SCENARIO_INSTANCE_FNAME"
+			],
+			[
+				"extne",
+				"extended_properties"
+			],
+			[
+				"no",
+				"nominal_properties"
+			],
+			[
+				"exted",
+				"extended_properties"
+			],
+			[
+				"EXTNE",
+				"EXTENDED_PROPERTIES"
+			],
+			[
+				"AIR",
+				"AIRSPACE_WORKBENCH"
+			],
+			[
+				"nu",
+				"NUXMV_BIN"
+			],
+			[
+				"OCRA",
+				"OCRA_BIN"
+			],
+			[
+				"gener",
+				"generate_instace"
+			],
+			[
+				"BURDEN",
+				"BURDEN_VALUES"
+			],
+			[
+				"GSEP",
+				"GSEP_TO_SSEP_VALUES"
+			],
+			[
+				"MAE",
+				"MAKE_TEMPLATE_CMD"
+			],
+			[
+				"MAKE",
+				"MAKE_EXTENDED_CMD"
+			],
+			[
+				"MA",
+				"MAKE_AIRSPACE_CMD"
+			],
+			[
+				"proc",
+				"proc2"
+			],
+			[
+				"ant",
+				"antlr"
+			],
+			[
+				"ai",
+				"arithmeticParser"
+			],
+			[
+				"a",
+				"arithmeticLexer"
+			],
+			[
+				"arti",
+				"arithmeticParser"
+			],
+			[
+				"N",
+				"NOT"
+			],
+			[
+				"O",
+				"OR"
+			],
+			[
+				"IN",
+				"INVAR"
+			],
+			[
+				"DEF",
+				"DEFINE-SORT"
+			],
+			[
+				"DEC",
+				"DECLARE-SORT"
+			],
+			[
+				"Z3",
+				"Z3_LIB"
+			],
+			[
+				"Z",
+				"Z3_HEADER_SOURCE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 296.0,
+		"last_filter": "jekyll",
+		"selected_items":
+		[
+			[
+				"jekyll",
+				"Jekyll: New draft"
+			],
+			[
+				"jekyll uti",
+				"Jekyll Utility: Migrate user settings"
+			],
+			[
+				"jek",
+				"Jekyll: Edit _config.yml"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"LaTeXTools: Delete temporary files"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"LaTeXTools: Check system"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"l",
+				"LaTeXTools: Delete temporary files"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 383.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dureja/rohitdureja.github.io"
+	],
+	"file_history":
+	[
+		"/home/dureja/.config/sublime-text-3/Settings/SideBarEnhancements.json",
+		"/home/dureja/rohitdureja.github.io/_drafts/interpolation-and-interpolation-sequence.markdown",
+		"/home/dureja/rohitdureja.github.io/blog.sublime-project",
+		"/home/dureja/rohitdureja.github.io/css/main.scss",
+		"/home/dureja/rohitdureja.github.io/_posts/2017-06-22-welcome-to-jekyll.markdown",
+		"/home/dureja/rohitdureja.github.io/_posts/2017-06-27-interpolation.markdown",
+		"/home/dureja/rohitdureja.github.io/_drafts/interpolation.markdown",
+		"/home/dureja/rohitdureja.github.io/_posts/2017-06-27-test.markdown",
+		"/home/dureja/rohitdureja.github.io/_bibliography/references.bib",
+		"/home/dureja/rohitdureja.github.io/_sass/_layout.scss",
+		"/home/dureja/rohitdureja.github.io/_sass/_base.scss",
+		"/home/dureja/rohitdureja.github.io/_includes/footer.html",
+		"/home/dureja/rohitdureja.github.io/Gemfile",
+		"/home/dureja/rohitdureja.github.io/_layouts/home.html",
+		"/home/dureja/rohitdureja.github.io/_pages/contact.md",
+		"/home/dureja/rohitdureja.github.io/index.md",
+		"/home/dureja/rohitdureja.github.io/_includes/header.html",
+		"/home/dureja/rohitdureja.github.io/_config.yml",
+		"/home/dureja/rohitdureja.github.io/_includes/head.html",
+		"/home/dureja/rohitdureja.github.io/_pages/publications.md",
+		"/home/dureja/rohitdureja.github.io/_layouts/page.html",
+		"/home/dureja/rohitdureja.github.io/_layouts/bib.html",
+		"/home/dureja/rohitdureja.github.io/ieee.csl",
+		"/home/dureja/rohitdureja.github.io/_includes/copyright.html",
+		"/home/dureja/SymbolicTechniques/Papers/HVC17/paper/hvc17.tex",
+		"/home/dureja/website backup/index.html",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/paper/rebuttal",
+		"/home/dureja/Documents/startjekyll/_pages/contact.md",
+		"/home/dureja/Documents/startjekyll/index.html",
+		"/home/dureja/Documents/startjekyll/_layouts/home.html",
+		"/home/dureja/Documents/startjekyll/_layouts/default.html",
+		"/home/dureja/Documents/startjekyll/_sass/_layout.scss",
+		"/home/dureja/Documents/startjekyll/_config.yml",
+		"/home/dureja/Documents/startjekyll/_includes/head.html",
+		"/home/dureja/Documents/startjekyll/_includes/footer.html",
+		"/home/dureja/Documents/startjekyll/_includes/header.html",
+		"/home/dureja/Documents/startjekyll/blog/index.html",
+		"/home/dureja/Documents/startjekyll/_pages/publications.md",
+		"/home/dureja/Documents/startjekyll/_sass/_base.scss",
+		"/home/dureja/Documents/startjekyll/_layouts/page.html",
+		"/home/dureja/Documents/startjekyll/_layouts/post.html",
+		"/home/dureja/Documents/startjekyll/_pages/about.md",
+		"/home/dureja/Documents/startjekyll/css/main.scss",
+		"/home/dureja/Documents/startjekyll/_sass/_syntax-highlighting.scss",
+		"/home/dureja/Documents/portfolio/_includes/header.html",
+		"/home/dureja/Documents/portfolio/_includes/feed-detail.xml",
+		"/home/dureja/Documents/portfolio/_includes/analytics.html",
+		"/home/dureja/Documents/portfolio/_includes/education.html",
+		"/home/dureja/Documents/portfolio/_includes/footer.html",
+		"/home/dureja/Documents/portfolio/static/css/main.css",
+		"/home/dureja/Documents/portfolio/static/css/bootstrap.icon-large.min.css",
+		"/home/dureja/Documents/portfolio/_layouts/home.html",
+		"/home/dureja/SymbolicTechniques/Papers/AVIATION17/paper/aviation17.tex",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/paper/feedback",
+		"/home/dureja/rohitdureja.github.io/notes/itp/itp.tex",
+		"/home/dureja/rohitdureja.github.io/notes/itp/itp.bib",
+		"/home/dureja/SymbolicTechniques/Papers/README.md",
+		"/home/dureja/rohitdureja.github.io/notes/itp/essay_2.tex",
+		"/home/dureja/SymbolicTechniques/Papers/QEST17/paper/qest17.tex",
+		"/home/dureja/rohitdureja.github.io/notes/itp/structure.tex",
+		"/home/dureja/rohitdureja.github.io/notes/itp/article_4.tex",
+		"/home/dureja/SymbolicTechniques/Documentation/Z3/z3guide.tex",
+		"/home/dureja/SymbolicTechniques/Papers/AVIATION17/slides/AIAA_AVIATION17_slides.tex",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/artifact.html",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/benchmark.html",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/contact.html",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/index.html",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/results.html",
+		"/home/dureja/Downloads/sf/Basics.v",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/website/style.css",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/fmcad17.tex",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/mutator.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/gather.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/template.job",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/make_report.py",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/make_report.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/create_jobs.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/submit_jobs.py",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/scripts/make_report.py",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/fmcad17.bib",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/generator.py",
+		"/home/dureja/cmcr_artifiacts/plots/combine_original_heuristic1_heuristic2_generate_plots.py",
+		"/home/dureja/Documents/Experiments/NASA-AAC/results/tables/table.02.tex",
+		"/home/dureja/cmcr_artifiacts/plots/heuristic1_generate_plots.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/bobsynth09neg.aag",
+		"/home/dureja/Downloads/S1571066107001788.bib",
+		"/home/dureja/Downloads/10.1007%2F978-3-319-19458-5_5.bib",
+		"/home/dureja/SymbolicTechniques/Papers/QEST17/paper/qest17.bib",
+		"/home/dureja/SymbolicTechniques/Papers/AVIATION17/paper/aviation17.bib",
+		"/home/dureja/SymbolicTechniques/Projects/NetEnabledAircraft/ECONReport/NetEnabledAircraft.tex",
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD16/Paper/fmcad16.tex",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/6s31.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/6s177.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/6s194.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.10.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.09.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.08.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.06.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.00.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.01.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.05.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.04.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.02.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.1.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.0.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/6s194.aag",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/scripts/gather_results.py",
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/extract_vmt.cmd",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/eijks298.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/test.smv",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/pdtpmsudc8.aig",
+		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/power2bit8.aig",
+		"/home/dureja/Downloads/hwmcc15-benchmarks-single/power2bit8.aig",
+		"/home/dureja/Documents/Experiments/NASA-AAC/data/Prop.28/original/C.0882.original.log.xml",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/gather_results.py",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/create_jobs.py",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/generator.py",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch4/wbs_arch4.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch3/wbs_arch3.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch2_with_normal_alternate_mutex/wbs_arch2.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch2bis_with_normal_alternate_mutex/wbs_arch2bis.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch2bis_with_normal_alternate_mutex/model/wbs_arch2bis.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch2bis/wbs_arch2bis.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch2/wbs_arch2.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch1/wbs_arch1.smv",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/models/arch1/model/wbs_arch1.smv",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/submit_jobs.py",
+		"/home/dureja/Documents/Experiments/Boeing-WBS/benchmarks/arch1/model/wbs_arch1.smv"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"@",
+			"url",
+			"entry",
+			"doi",
+			"pdf",
+			"under",
+			"review",
+			"et",
+			"et al",
+			"[",
+			"Citation Number",
+			"number",
+			"font-size",
+			"boolean",
+			"Zigbee",
+			"privacy",
+			"boolean",
+			"IBM",
+			"requirements",
+			"full_time_hwmcc",
+			"hwmcc_block_time",
+			"full_time_hwmcc",
+			"clearpage",
+			"clearpa",
+			"clearpaer",
+			"newpage",
+			"154",
+			"subfigu",
+			"typical",
+			"almost",
+			"IEEE",
+			"Trans",
+			"print",
+			"footnote",
+			"RuleBase",
+			"Rulebase",
+			"\\section",
+			"sem",
+			"seman",
+			"family",
+			"property",
+			"Zigbee",
+			"boolean",
+			"fault analysis",
+			"caption",
+			"boneh",
+			"todo",
+			"requirement",
+			"property",
+			"todo",
+			"prop_folder",
+			"options.filepath",
+			"prop",
+			"WORKBENCH",
+			"TEMP_FOLDER",
+			"nuXmv",
+			"format",
+			"Invar",
+			"workbench",
+			" G ",
+			"LTLSPEC",
+			" G ",
+			"LTLSPEC",
+			" G ",
+			"LTLSPEC",
+			" G ",
+			"LTLSPEC",
+			"G",
+			"LTLSPEC NAME (.*) := \\(TRUE ->  G \\((.+)\\);",
+			"LTLSPEC NAME (.*) := \\( G \\((.*)\\) ->  G (!?)\\((.*)\\);",
+			"INVARSPEC NAME (.*):= \\( G \\((.*)\\) ->  G (!?)\\((.*)\\);",
+			"LTLSPEC",
+			"chocker",
+			"LTLSPEC",
+			"03",
+			"02",
+			"01",
+			"theore",
+			"get-\\sat",
+			"\\textsc{sat}",
+			"faulty_cubes",
+			"cite",
+			"we",
+			"repair",
+			"INDState",
+			"xml",
+			"extended",
+			"os.mkdir",
+			"TEMP_FOLDER",
+			"C_ALL",
+			"check_invar_ic3 -P ",
+			"skip_nominal",
+			"MAKE_NOMINAL_CMD",
+			"make_temp",
+			"lbl2next",
+			"get_next",
+			"reset",
+			"compute_cti",
+			"stack",
+			"frame_labels_",
+			"lit",
+			"init_label_",
+			"generalize",
+			"inv",
+			"=",
+			"LTL_1_SPECF_2__AT0",
+			":next",
+			"repair",
+			"}},",
+			"hypotheses",
+			"__WFF_MONITOR_0__AT1",
+			"__WFF_MONITOR_0__AT0",
+			"invar",
+			"MC::MC",
+			"MC",
+			"-",
+			"\");",
+			"printf(\"",
+			"printf(",
+			"include",
+			"C++",
+			"vspace",
+			"held",
+			"objective",
+			"multi",
+			"rebek:82bk",
+			"ref",
+			"bibtex_data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Boolean",
+			"ZigBee",
+			"Boolean",
+			"ZigBee",
+			"Boolean",
+			"model_folder",
+			" model",
+			" ",
+			" INVARSPEC",
+			" ",
+			" INVARSPEC",
+			" ",
+			"INVARSPEC",
+			" INVARSPEC",
+			" ",
+			"INVARSPEC",
+			"",
+			"INVARSPEC NAME \\1 := (\\2",
+			"INVARSPEC NAME \\1 := \\2",
+			"INVARSPEC NAME \\1 := ( \\2 -> \\3\\4;",
+			"INVARSPEC NAME \\1 := ( \\2 -> \\3\\4);",
+			"INVARSPEC NAME \\1 := ( (\\2) -> \\3(\\4));",
+			"INVARSPEC NAME \\1 := ( (\\2) -> (\\3)(\\4);",
+			"INVARSPEC NAME \\1 := ( (\\2) -> (\\3)(\\4));",
+			"INVARSPEC",
+			"04",
+			"03",
+			"02",
+			"",
+			"VMT",
+			"_",
+			";",
+			"return "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/home/dureja/rohitdureja.github.io",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 106.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 385.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 293.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
