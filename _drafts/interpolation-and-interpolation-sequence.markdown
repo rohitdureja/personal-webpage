@@ -1,24 +1,21 @@
 ---
-title: Interpolants and Interpolation-Sequence
+title: Interpolants and Interpolation Sequence
 layout: post
 author: Rohit Dureja
+series: "&raquo; *This post is a part of a series on ideas from symbolic logic lifted to verification* &laquo;"
+tags:
+- logic
+- verification
 ---
 
----
-
-&raquo; *This post is a part of a series on ideas from symbolic logic lifted to verification* &laquo;
-
----
-
-## Craig Interpolant
-
-For a pair of inconsistent formulas $$ (A, B) $$, i.e., $$ A \wedge B \equiv \bot $$ or **unsatisfiable**, the Craig Interpolant {% cite Cra57 --file citations-itp %} for $$(A, B)$$ is a formula $$\mathcal{I}$$ such that
+For a pair of inconsistent formulas $$ (A, B) $$, i.e., $$ A \wedge B \equiv \bot $$ or **unsatisfiable**, the **Craig Interpolant** {% cite Cra57 --file citations-itp %} for $$(A, B)$$ is a formula $$\mathcal{I}$$ such that
 
 * $$ A \to \mathcal{I} $$,
 * $$ \mathcal{I} \wedge B \equiv \bot $$, and
 * $$ \mathcal{I} $$ contains variables common to $$A$$ and $$B$$.
 
-The interpolant can be viewed as the part of $$A$$ that is sufficient to contradict $$B$$. Modern SAT solvers produce a *proof of unsatisfiability*, or resolution proof, if the checked formula is unsatisfiable. An interpolant can be extracted in linear time {% cite Pud97 --file citations-itp %} from a proof of unsatisfiability. The chief advantage of deriving interpolants from proofs is that they capture facts which the SAT solver derived about $$ A $$ in showing that $$ A $$ is inconsistent with $$ B $$. Therefore, assuming that the prover ignores irrelevant facts and focuses on real ones, interpolation can be thought of as a way of filtering out irrelevant information from $$ A $$ {% cite McM05 --file citations-itp %}.
+
+The interpolant can be viewed as the part of $$A$$ that is sufficient to contradict $$B$$. Modern SAT solvers produce a *proof of unsatisfiability*, or resolution proof, if the checked formula is unsatisfiable. <!-- break --> An interpolant can be extracted in linear time {% cite Pud97 --file citations-itp %} from a proof of unsatisfiability. The chief advantage of deriving interpolants from proofs is that they capture facts which the SAT solver derived about $$ A $$ in showing that $$ A $$ is inconsistent with $$ B $$. Therefore, assuming that the prover ignores irrelevant facts and focuses on real ones, interpolation can be thought of as a way of filtering out irrelevant information from $$ A $$ {% cite McM05 --file citations-itp %}.
 
 ## Interpolants from Proofs
 

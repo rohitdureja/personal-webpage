@@ -100,7 +100,7 @@ main {
   margin: 0 auto;
 }
 time {
-  color: #898989;
+  color: $main;
 }
 .container {
   max-width: $content-width;
@@ -225,4 +225,8 @@ figure {
   padding-top: 10px;
   border-top: 1px solid $main;
   border-bottom: 1px solid $main;
+}
+
+.btn {
+  background-color: $navbar;
 }

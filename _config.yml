@@ -17,7 +17,11 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 include: ['_pages']
-gems: ['jekyll/scholar']
+gems: 
+  - 'jekyll/scholar'
+  - 'jekyll/feed'
+
+excerpt_separator: <!-- break -->
 
 # Scholar settings
 scholar:
