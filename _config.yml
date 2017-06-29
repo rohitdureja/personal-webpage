@@ -12,6 +12,8 @@ twitter: rohitdureja
 github:  rohitdureja
 facebook: rohit.dureja
 
+permalink: "/notes/:year/:month/:day/:title"
+
 # Build settings
 markdown: kramdown
 sass:
