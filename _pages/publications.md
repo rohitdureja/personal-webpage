@@ -5,4 +5,4 @@ permalink: /publications/
 ---
 
 
-Under Construction
+{% bibliography %}
