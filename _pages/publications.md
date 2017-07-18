@@ -5,4 +5,14 @@ permalink: /publications/
 ---
 
 
-{% bibliography %}
+### Peer Reviewed Conferences
+
+{% bibliography --query @inproceedings %}
+
+### Workshops and Posters
+
+{% bibliography --query @misc %}
+
+### Books and Book Chapters
+
+{% bibliography --query @book %}

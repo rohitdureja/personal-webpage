@@ -1,12 +1,31 @@
 ---
 ---
 
-<p>{{ reference }}</p>
-<p>{{ entry.title }}</p>
-<p>{{ entry.booktitle }}, {{ entry.year }}</p>
+{% if entry.type == "inproceedings" %}
+<entry>
+<pubtitle>{{ entry.title }}</pubtitle><br>
+<authors>{{ reference }}</authors><br>
+<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
+</entry>
+{% endif %}
 
-<!-- {% if entry.abstract %}
+{% if entry.type == "misc" %}
+<entry>
+<pubtitle>{{ entry.title }}</pubtitle><br>
+<authors>{{ reference }}</authors><br>
+<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
+</entry>
+{% endif %}
+
+
+{% if entry.type == "book" %}
+<entry>
+<pubtitle>{{ entry.title }}</pubtitle><br>
+<authors>{{ reference }}</authors><br>
+<publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year>
+</entry>
+{% endif %}
+
+{% if entry.abstract %}
 <p>{{ entry.abstract }}</p>
-{% endif %} -->
-
-<!-- <pre>{{ entry.bibtex }}</pre> -->
+{% endif %}

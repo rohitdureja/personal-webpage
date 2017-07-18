@@ -19,7 +19,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 include: ['_pages']
-gems: 
+gems:
   - 'jekyll/scholar'
   - 'jekyll/feed'
 
@@ -39,4 +39,6 @@ scholar:
 
   sort_by: year
   order: descending
+
+  query: "@*"
 

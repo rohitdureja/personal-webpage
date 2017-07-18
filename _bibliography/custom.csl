@@ -12,7 +12,7 @@
     <updated>2017-07-03T15:22:45+00:00</updated>
   </info>
   <macro name="author">
-    <group suffix=".">
+    <group suffix="">
       <names variable="author">
         <name delimiter=", " and="text" sort-separator=", "/>
         <label form="short" text-case="capitalize-first" prefix=" (" suffix=")"/>
@@ -112,7 +112,7 @@
       <key variable="issued"/>
     </sort>
     <layout>
-      <group delimiter=". " suffix=". ">
+      <group delimiter="" suffix="">
         <text macro="author"/>
       </group>
     </layout>
