@@ -30,7 +30,7 @@ exclude:
 
 # Scholar settings
 scholar:
-  style: apa
+  style: _bibliography/custom.csl
   locale: en
 
   source: _bibliography
