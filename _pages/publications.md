@@ -7,12 +7,12 @@ permalink: /publications/
 
 ### Peer Reviewed Conferences
 
-{% bibliography --query @inproceedings %}
+{% bibliography --style _styles/custom.csl --query @inproceedings  %}
 
 ### Workshops and Posters
 
-{% bibliography --query @misc %}
+{% bibliography --style _styles/custom.csl --query @misc %}
 
 ### Books and Book Chapters
 
-{% bibliography --query @book %}
+{% bibliography --style _styles/custom.csl --query @book %}

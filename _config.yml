@@ -30,7 +30,7 @@ exclude:
 
 # Scholar settings
 scholar:
-  style: _bibliography/custom.csl
+  style: _styles/association-for-computing-machinery.csl
   locale: en
 
   source: _bibliography
