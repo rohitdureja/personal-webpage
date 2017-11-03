@@ -74,6 +74,10 @@ pre span { line-height: 1.5rem; }
 
 pre span:before { width: 30px; counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; padding: 0 .5em; margin-right: .5em; color: #888; -webkit-user-select: none; }
 
+ol li { padding-left: 20px; padding-bottom: 10px; }
+
+entry pubtitle { color: #1e4d76; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }

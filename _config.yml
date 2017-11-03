@@ -19,7 +19,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 include: ['_pages']
-gems: 
+gems:
   - 'jekyll/scholar'
   - 'jekyll/feed'
 
@@ -30,7 +30,7 @@ exclude:
 
 # Scholar settings
 scholar:
-  style: apa
+  style: _styles/association-for-computing-machinery.csl
   locale: en
 
   source: _bibliography
@@ -39,4 +39,6 @@ scholar:
 
   sort_by: year
   order: descending
+
+  query: "@*"
 

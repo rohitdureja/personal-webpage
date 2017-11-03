@@ -81,7 +81,7 @@ $$L = \Sigma_{c \in V} |c|$$. It the worst case, lines 2--5 repeat $N$ times, an
 
 {% include image.html url="/images/posts/interpolation_alg.png" description="Figure 2: Intermediate $$p(c)$$ formulas for every vertex $$c$$ in the proof of unsatisfiability graph of Figure 1." width="350px" %}
 
-For the leaf vertex $$l$$, $$p(l) = p$$. Therefore, $$ITP(\Pi, A, B) = p$$. It can be verified that $$\mathcal{I} = p$$ is the interpolant of clause sets $$(A, B)$$ since $$A \to \mathcal{I}$$, $$\mathcal{I} \wedge B \equiv B$$, and $$\mathcal{I}$$ contains variables common to both $$A$$ and $$B$$.
+For the leaf vertex $$l$$, $$p(l) = p$$. Therefore, $$ITP(\Pi, A, B) = p$$. It can be verified that $$\mathcal{I} = p$$ is the interpolant of clause sets $$(A, B)$$ since $$A \to \mathcal{I}$$, $$\mathcal{I} \wedge B \equiv \bot$$, and $$\mathcal{I}$$ contains variables common to both $$A$$ and $$B$$.
 
 
 
