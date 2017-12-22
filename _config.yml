@@ -37,6 +37,8 @@ scholar:
   bibliography: references
   bibliography_template: bib
 
+  repository: assets/papers
+
   sort_by: year
   order: descending
 

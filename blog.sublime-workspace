@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"clone",
+				"clone_url"
+			],
+			[
+				"tot",
+				"tot_typical"
+			],
+			[
+				"addite",
+				"additive_total_time"
+			],
+			[
+				"typical",
+				"typical_total_time"
+			],
+			[
 				"paddin",
 				"padding-left"
 			],
@@ -401,16 +417,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -467,9 +473,13 @@
 	"command_palette":
 	{
 		"height": 296.0,
-		"last_filter": "jekyll",
+		"last_filter": "jekyl",
 		"selected_items":
 		[
+			[
+				"jekyl",
+				"Jekyll: New draft"
+			],
 			[
 				"jekyll",
 				"Jekyll: Promote draft to post"
@@ -531,7 +541,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 355.0
+		"width": 501.0
 	},
 	"console":
 	{
@@ -550,19 +560,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/dureja/rohitdureja.github.io",
-		"/home/dureja/rohitdureja.github.io/_bibliography",
-		"/home/dureja/rohitdureja.github.io/_includes",
-		"/home/dureja/rohitdureja.github.io/_layouts",
-		"/home/dureja/rohitdureja.github.io/_pages",
-		"/home/dureja/rohitdureja.github.io/_posts",
-		"/home/dureja/rohitdureja.github.io/_sass",
-		"/home/dureja/rohitdureja.github.io/css"
-	],
 	"file_history":
 	[
+		"/home/dureja/SymbolicTechniques/Papers/FMCAD17/presentation/presentation.tex",
+		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/make_report.py",
+		"/home/dureja/SymbolicTechniques/MeetingNotes/NexusMC/arch/images/preamble.tex",
+		"/home/dureja/rohitdureja.github.io/_posts/2017-09-20-et.markdown",
+		"/home/dureja/.config/sublime-text-3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/home/dureja/.config/sublime-text-3/Packages/User/Jekyll.sublime-settings",
 		"/home/dureja/rohitdureja.github.io/_config.yml",
 		"/home/dureja/rohitdureja.github.io/_pages/publications.md",
 		"/home/dureja/rohitdureja.github.io/_posts/2017-06-29-interpolants-and-relevance.markdown",
@@ -655,7 +660,6 @@
 		"/home/dureja/Documents/Experiments/HWMCC15/scripts/gather.py",
 		"/home/dureja/Documents/Experiments/HWMCC15/scripts/template.job",
 		"/home/dureja/Documents/Experiments/HWMCC15/scripts/make_report.py",
-		"/home/dureja/Documents/Experiments/NASA-AAC/scripts/make_report.py",
 		"/home/dureja/Documents/Experiments/HWMCC15/scripts/create_jobs.py",
 		"/home/dureja/Documents/Experiments/HWMCC15/scripts/submit_jobs.py",
 		"/home/dureja/Documents/Experiments/Boeing-WBS/scripts/make_report.py",
@@ -685,16 +689,11 @@
 		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.02.aig",
 		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.1.aig",
 		"/home/dureja/Documents/Experiments/HWMCC15/mutations/power2bit8/power2bit8.0.aig",
-		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/6s194.aag",
-		"/home/dureja/Documents/Experiments/Boeing-WBS/scripts/gather_results.py",
-		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/extract_vmt.cmd",
-		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/eijks298.aig",
-		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/test.smv",
-		"/home/dureja/Documents/Experiments/HWMCC15/hwmcc15-benchmarks-single/pdtpmsudc8.aig"
+		"/home/dureja/Documents/Experiments/HWMCC15/scripts/temp/6s194.aag"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -885,46 +884,9 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/home/dureja/rohitdureja.github.io",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -966,10 +928,9 @@
 		"height": 106.0
 	},
 	"pinned_build_system": "",
-	"project": "blog.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 43.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -999,7 +960,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
