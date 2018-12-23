@@ -10,9 +10,9 @@
 
 .navbar .navbar-collapse { text-align: center; }
 
-body { margin: 0; color: #262626; font-family: "Open Sans", sans-serif; font-size: 1.1em; line-height: 1.6; text-align: justify; -webkit-font-smoothing: antialiased; }
+body { margin: 0; color: #262626; font-family: "Fira Sans", sans-serif; font-size: 1.1em; line-height: 1.6; text-align: justify; -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; text-align: left; }
+h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; text-align: center; }
 
 h1 { color: #1e4d76; font-size: 2.2em; }
 h1 a, h1 a:visited { text-decoration: none; color: #1e4d76; }
@@ -26,7 +26,7 @@ h3 { font-size: 1.5em; }
 */
 article { font-size: 10pt; }
 
-main article .post { padding-top: 10pt; font-family: "Open Sans", sans-serif; }
+main article .post { padding-top: 10pt; font-family: "Fira Sans", sans-serif; }
 
 main { padding: 0 15px; max-width: 800px; margin: 0 auto; }
 

@@ -4,6 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
+{: style="text-align: left;"}
 
 ### Peer Reviewed Conferences
 
