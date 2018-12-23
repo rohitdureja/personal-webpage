@@ -3,7 +3,7 @@
 
 {% if entry.type == "inproceedings" %}
 <entry>
-<pubtitle>{{ entry.title }}</pubtitle><br>
+<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
 <authors>{{ reference }}</authors><br>
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
 </entry>
@@ -11,7 +11,7 @@
 
 {% if entry.type == "misc" %}
 <entry>
-<pubtitle>{{ entry.title }}</pubtitle><br>
+<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
 <authors>{{ reference }}</authors><br>
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
 </entry>
@@ -20,7 +20,7 @@
 
 {% if entry.type == "book" %}
 <entry>
-<pubtitle>{{ entry.title }}</pubtitle><br>
+<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
 <authors>{{ reference }}</authors><br>
 <publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year>
 </entry>
