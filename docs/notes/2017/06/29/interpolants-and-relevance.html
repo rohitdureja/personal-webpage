@@ -78,7 +78,7 @@
 
 
 <div class="post">
-<p>For a pair of inconsistent formulas <script type="math/tex">(A, B)</script>, i.e., <script type="math/tex">A \wedge B \equiv \bot</script> or <strong>unsatisfiable</strong>, the <strong>Craig Interpolant</strong> <a href="#Cra57">[1]</a> for <script type="math/tex">(A, B)</script> is a formula <script type="math/tex">\mathcal{I}</script> such that</p>
+<p>For a pair of inconsistent formulas <script type="math/tex">(A, B)</script>, i.e., <script type="math/tex">A \wedge B \equiv \bot</script> or <strong>unsatisfiable</strong>, the <strong>Craig Interpolant</strong> <a class="citation" href="#Cra57">[1]</a> for <script type="math/tex">(A, B)</script> is a formula <script type="math/tex">\mathcal{I}</script> such that</p>
 
 <ul>
   <li><script type="math/tex">A \to \mathcal{I}</script>,</li>
@@ -86,7 +86,7 @@
   <li><script type="math/tex">\mathcal{I}</script> contains variables common to <script type="math/tex">A</script> and <script type="math/tex">B</script>.</li>
 </ul>
 
-<p>The interpolant can be viewed as the part of <script type="math/tex">A</script> that is sufficient, or <strong>relevant</strong>, to contradict <script type="math/tex">B</script>. Modern SAT solvers produce a <em>proof of unsatisfiability</em>, or resolution proof, if the checked formula is unsatisfiable. <!-- break --> An interpolant can be extracted in linear time <a href="#Pud97">[2]</a> from a proof of unsatisfiability. The chief advantage of deriving interpolants from proofs is that they capture facts which the SAT solver derived about <script type="math/tex">A</script> in showing that <script type="math/tex">A</script> is inconsistent with <script type="math/tex">B</script>. Therefore, assuming that the prover ignores irrelevant facts and focuses on real ones, interpolation can be thought of as a way of filtering out irrelevant information from <script type="math/tex">A</script> <a href="#McM05">[3]</a>.</p>
+<p>The interpolant can be viewed as the part of <script type="math/tex">A</script> that is sufficient, or <strong>relevant</strong>, to contradict <script type="math/tex">B</script>. Modern SAT solvers produce a <em>proof of unsatisfiability</em>, or resolution proof, if the checked formula is unsatisfiable. <!-- break --> An interpolant can be extracted in linear time <a class="citation" href="#Pud97">[2]</a> from a proof of unsatisfiability. The chief advantage of deriving interpolants from proofs is that they capture facts which the SAT solver derived about <script type="math/tex">A</script> in showing that <script type="math/tex">A</script> is inconsistent with <script type="math/tex">B</script>. Therefore, assuming that the prover ignores irrelevant facts and focuses on real ones, interpolation can be thought of as a way of filtering out irrelevant information from <script type="math/tex">A</script> <a class="citation" href="#McM05">[3]</a>.</p>
 
 <h2 id="interpolants-from-proofs">Interpolants from Proofs</h2>
 
@@ -140,7 +140,7 @@
   <li><script type="math/tex">l(c_2) = (\bot)</script>.</li>
 </ul>
 
-<p><strong>Algorithm:</strong> The description of the algorithm to find interpolant from proofs is based on <a href="#McM03">[4]</a>. Let <script type="math/tex">(A, B)</script> be a pair of set clauses and <script type="math/tex">\Pi = (V, E)</script> be the proof of unsatisfiability graph for inconsistency of <script type="math/tex">A \wedge B</script>. For every vertex <script type="math/tex">c \in V</script>, we compute a boolean formula <script type="math/tex">p(c)</script> as follows.</p>
+<p><strong>Algorithm:</strong> The description of the algorithm to find interpolant from proofs is based on <a class="citation" href="#McM03">[4]</a>. Let <script type="math/tex">(A, B)</script> be a pair of set clauses and <script type="math/tex">\Pi = (V, E)</script> be the proof of unsatisfiability graph for inconsistency of <script type="math/tex">A \wedge B</script>. For every vertex <script type="math/tex">c \in V</script>, we compute a boolean formula <script type="math/tex">p(c)</script> as follows.</p>
 
 <pre class="code"><code><span>if c is root, i.e. c ∈ V then</span>
 <span>  if c ∈ A then</span>
