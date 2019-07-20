@@ -78,10 +78,6 @@ ol li { padding-left: 20px; padding-bottom: 10px; }
 
 entry pubtitle { color: #1e4d76; }
 
-ol.bibliography { list-style-type: none; }
-
-ol.bibliography > li::before { content: "\25AA"; color: #1e4d76; font-weight: bold; display: inline-block; width: 1em; margin-left: -30px; margin-right: 13px; }
-
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
