@@ -269,14 +269,4 @@ entry pubtitle {
   color: $main;
 }
 
-ol.bibliography { list-style-type: none; }
-
-ol.bibliography > li::before {
-  content: "\25AA";
-  color: $main;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -30px;
-  margin-right: 13px;
-}
+ol.bibliography { list-style-type: square; }
