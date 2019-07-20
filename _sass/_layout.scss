@@ -264,7 +264,13 @@ pre span:before {
 ol li {
   padding-left: 20px;
   padding-bottom: 10px;
+  text-align: left;
 }
+
 entry pubtitle {
   color: $main;
+}
+
+entry venue {
+  font-style: italic;
 }

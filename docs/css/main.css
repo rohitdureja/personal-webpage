@@ -74,9 +74,11 @@ pre span { line-height: 1.5rem; }
 
 pre span:before { width: 30px; counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; padding: 0 .5em; margin-right: .5em; color: #888; -webkit-user-select: none; }
 
-ol li { padding-left: 20px; padding-bottom: 10px; }
+ol li { padding-left: 20px; padding-bottom: 10px; text-align: left; }
 
 entry pubtitle { color: #1e4d76; }
+
+entry venue { font-style: italic; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
