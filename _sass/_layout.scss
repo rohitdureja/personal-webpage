@@ -228,14 +228,17 @@ figure {
 }
 
 .btn {
-  background-color: $navbar;
+  padding-bottom: 0em;
+  padding-top: 0em;
+  font-family: $font-style;
+
 }
 
 
 pre {
   font-family: monospace;
   width: em(440);
-  margin: 2em auto;
+  margin: 2em;
   padding: 0.5em;
   border-radius: .25em;
   counter-reset: line;

@@ -5,24 +5,41 @@
 <entry>
 <a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
 <authors>{{ reference }}</authors><br>
-<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
+<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
+{% if entry.preprint %}<a class="btn btn-primary btn-sm" href="{{ entry.preprint }}" role="button">preprint</a>{% endif %}
+{% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
+{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
+{% if entry.website %}<a class="btn btn-primary btn-sm" href="{{ entry.website }}" role="button">website</a>{% endif %}
 </entry>
 {% endif %}
 
 {% if entry.type == "misc" %}
 <entry>
-<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
+{% if entry.url %}<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% else %}
+<pubtitle>{{ entry.title }}</pubtitle>{% endif %}
+<br>
 <authors>{{ reference }}</authors><br>
-<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year>
+<venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
+{% if entry.preprint %}<a class="btn btn-primary btn-sm" href="{{ entry.preprint }}" role="button">preprint</a>{% endif %}
+{% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
+{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
+{% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
+<!-- <a data-toggle="collapse" data-target="#{{ entry.key | downcase }}" class="btn btn-primary btn-sm" role="button">bibtex</a>
+<div id="{{ entry.key | downcase }}" class="collapse">
+<pre>{{ entry.bibtex }}</pre>
+</div> -->
 </entry>
 {% endif %}
 
 
 {% if entry.type == "book" %}
 <entry>
-<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
+{% if entry.url %}<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% else %}
+<pubtitle>{{ entry.title }}</pubtitle>{% endif %}
+<br>
 <authors>{{ reference }}</authors><br>
-<publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year>
+<publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year><br>
+{% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
 </entry>
 {% endif %}
 
