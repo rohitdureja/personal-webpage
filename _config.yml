@@ -22,6 +22,7 @@ include: ['_pages']
 plugins:
   - 'jekyll/scholar'
   - 'jekyll/feed'
+  - 'jekyll-sitemap'
 
 excerpt_separator: <!-- break -->
 
