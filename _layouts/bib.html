@@ -8,8 +8,8 @@
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
 {% if entry.preprint %}<a class="btn btn-primary btn-sm" href="{{ entry.preprint }}" role="button">preprint</a>{% endif %}
 {% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
-{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
 {% if entry.website %}<a class="btn btn-primary btn-sm" href="{{ entry.website }}" role="button">website</a>{% endif %}
+{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
 </entry>
 {% endif %}
 
@@ -22,8 +22,8 @@
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
 {% if entry.preprint %}<a class="btn btn-primary btn-sm" href="{{ entry.preprint }}" role="button">preprint</a>{% endif %}
 {% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
-{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
 {% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
+{% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
 <!-- <a data-toggle="collapse" data-target="#{{ entry.key | downcase }}" class="btn btn-primary btn-sm" role="button">bibtex</a>
 <div id="{{ entry.key | downcase }}" class="collapse">
 <pre>{{ entry.bibtex }}</pre>
