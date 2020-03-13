@@ -1,18 +1,20 @@
 *, *::before, *::after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 @media (min-width: 800px) { .navbar { margin-top: 1.1em; margin-right: auto; margin-left: auto; max-width: 800px; background: #1e4d76; } }
+* { font-family: 'Bellota Text', cursive; }
+
 @media (max-width: 800px) { .navbar { margin-top: 0; margin-right: auto; margin-left: auto; max-width: 800px; background: #1e4d76; } }
-.navbar .navbar-header .navbar-brand { color: #d5e6f5; -webkit-font-smoothing: antialiased; font-family: "Muli", sans-serif; font-size: 2.0em; font-weight: bold; }
+.navbar .navbar-header .navbar-brand { color: #d5e6f5; -webkit-font-smoothing: antialiased; /* font-family: $heading-font; */ font-size: 2.0em; font-weight: bold; }
 
-.navbar .navbar-nav a { color: #d5e6f5; -webkit-font-smoothing: antialiased; font-family: "Muli", sans-serif; font-weight: bold; }
+.navbar .navbar-nav a { color: #d5e6f5; -webkit-font-smoothing: antialiased; /* font-family: $heading-font; */ font-weight: bold; }
 
-.navbar .navbar-nav a:hover { color: #1e4d76; -webkit-font-smoothing: antialiased; font-family: "Muli", sans-serif; text-decoration: none; background-color: #d5e6f5; }
+.navbar .navbar-nav a:hover { color: #1e4d76; -webkit-font-smoothing: antialiased; /* font-family: $heading-font; */ text-decoration: none; background-color: #d5e6f5; }
 
 .navbar .navbar-collapse { text-align: center; }
 
-body { margin: 0; color: #262626; font-family: "Fira Sans", sans-serif; font-size: 1.1em; line-height: 1.6; text-align: justify; -webkit-font-smoothing: antialiased; }
+body { margin: 0; color: #262626; /* font-family: $font-style; */ font-size: 1.1em; line-height: 1.6; text-align: justify; -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; text-align: center; }
+h1, h2, h3 { font-weight: 600; color: #425469; /* font-family: $heading-font; */ line-height: 1.5; text-align: center; }
 
 h1 { color: #1e4d76; font-size: 2.2em; }
 h1 a, h1 a:visited { text-decoration: none; color: #1e4d76; }
@@ -26,7 +28,7 @@ h3 { font-size: 1.5em; }
 */
 article { font-size: 10pt; }
 
-main article .post { padding-top: 10pt; font-family: "Fira Sans", sans-serif; }
+main article .post { padding-top: 10pt; /* font-family: $font-style; */ }
 
 main { padding: 0 15px; max-width: 800px; margin: 0 auto; }
 
@@ -34,7 +36,7 @@ time { color: #1e4d76; }
 
 .container { max-width: 800px; margin: 0 auto; }
 
-footer { font-family: "Muli", sans-serif; padding-top: 20px; padding-bottom: 20px; }
+footer { /* font-family: $heading-font; */ padding-top: 20px; padding-bottom: 20px; }
 
 @media (min-width: 800px) { footer .about { font-size: 1.2em; text-align: justify; padding-right: 30px; border-right: 1px solid #DCDCDC; }
   footer .social { text-align: center; padding-top: 40px; }
@@ -48,9 +50,9 @@ footer .social ul { padding-left: 0; }
 
 footer .social ul li { padding-right: 25px; display: inline-block; }
 
-@media (min-width: 800px) { .contact { padding-top: 20px; padding-left: 60px; text-align: left; font-family: "Muli", sans-serif; color: #1e4d76; }
+@media (min-width: 800px) { .contact { padding-top: 20px; padding-left: 60px; text-align: left; /* font-family: $heading-font; */ color: #1e4d76; }
   .contact .social ul { padding-left: 0; padding-top: 20px; } }
-@media (max-width: 800px) { .contact { padding-top: 20px; padding-left: 10px; text-align: center; font-family: "Muli", sans-serif; color: #1e4d76; }
+@media (max-width: 800px) { .contact { padding-top: 20px; padding-left: 10px; text-align: center; /* font-family: $heading-font; */ color: #1e4d76; }
   .contact .social ul { padding-left: 30px; padding-top: 20px; } }
 .contact .name { font-size: 3em; padding-bottom: 5px; font-weight: bold; }
 
@@ -66,7 +68,7 @@ figcaption { font-size: 9pt; padding-top: 5px; color: #1e4d76; text-align: cente
 
 figure { margin-top: 20px; margin-bottom: 30px; padding-top: 10px; border-top: 1px solid #1e4d76; border-bottom: 1px solid #1e4d76; }
 
-.btn { padding-bottom: 0em; padding-top: 0em; font-family: "Fira Sans", sans-serif; }
+.btn { padding-bottom: 0em; padding-top: 0em; /* font-family: $font-style; */ }
 
 pre { font-family: monospace; width: em(440); margin: 2em; padding: 0.5em; border-radius: .25em; counter-reset: line; }
 

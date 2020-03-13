@@ -8,6 +8,10 @@
 }
 }
 
+* {
+  font-family: 'Bellota Text', cursive;
+}
+
 @media (max-width: 800px) {
 .navbar {
   margin-top: 0;
@@ -22,7 +26,7 @@
 .navbar .navbar-header .navbar-brand{
   color: $title;
   -webkit-font-smoothing: antialiased;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   font-size: 2.0em;
   font-weight: bold;
 }
@@ -30,13 +34,13 @@
 .navbar .navbar-nav a{
   color: $title;
   -webkit-font-smoothing: antialiased;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   font-weight: bold;
 }
 .navbar .navbar-nav a:hover{
   color: $navbar;
   -webkit-font-smoothing: antialiased;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   text-decoration: none;
   background-color: $title;
 }
@@ -48,7 +52,7 @@
 body {
   margin: 0;
   color: $font-color;
-  font-family: $font-style;
+  /* font-family: $font-style; */
   font-size: 1.1em;
   line-height: 1.6;
   text-align: justify;
@@ -59,7 +63,7 @@ h2,
 h3 {
   font-weight: 600;
   color: $heading-font-color;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   line-height: 1.5;
   text-align: center;
 }
@@ -91,7 +95,7 @@ article {
 
 main article .post {
   padding-top: 10pt;
-  font-family: $font-style;
+  /* font-family: $font-style; */
 }
 
 main {
@@ -108,7 +112,7 @@ time {
 }
 
 footer {
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -162,7 +166,7 @@ footer .social ul li {
   padding-top: 20px;
   padding-left: 60px;
   text-align: left;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   color: $main;
 }
 
@@ -178,7 +182,7 @@ footer .social ul li {
   padding-top: 20px;
   padding-left: 10px;
   text-align: center;
-  font-family: $heading-font;
+  /* font-family: $heading-font; */
   color: $main;
 }
 
@@ -230,7 +234,7 @@ figure {
 .btn {
   padding-bottom: 0em;
   padding-top: 0em;
-  font-family: $font-style;
+  /* font-family: $font-style; */
 
 }
 
