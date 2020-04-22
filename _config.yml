@@ -28,6 +28,8 @@ excerpt_separator: <!-- break -->
 
 exclude:
   - docs/
+  - notes/
+  - Gemfile
 
 # Scholar settings
 scholar:

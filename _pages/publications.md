@@ -10,6 +10,10 @@ permalink: /publications/
 
 {% bibliography --style _styles/custom.csl --query @inproceedings  %}
 
+#### Journals
+
+{% bibliography --style _styles/custom.csl --query @article  %}
+
 #### Workshops and Posters
 
 {% bibliography --style _styles/custom.csl --query @misc %}
