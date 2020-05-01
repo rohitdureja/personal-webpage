@@ -12,16 +12,11 @@
   {% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
   {% if entry.website %}<a class="btn btn-primary btn-sm" href="{{ entry.website }}" role="button">website</a>{% endif %}
   {% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
-  <a class="btn btn-primary btn-sm dropdown" data-toggle="collapse" href="#{{ entry.key | downcase }}bibtex" role="button">bibtex</a>
+  <a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
   <div class="collapse indent" id="{{ entry.key | downcase }}abstract">
     <div class="card card-body">
-      <br>{{ entry.abstract }}
+      <br><b>Abstract: </b>{{ entry.abstract }}
       <hr>
-    </div>
-  </div>
-  <div class="collapse" id="{{ entry.key | downcase }}bibtex">
-    <div class="card card-body">
-      <pre>{{ entry.bibtex }}</pre>
     </div>
   </div>
 </div>
@@ -39,16 +34,11 @@
   {% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
   {% if entry.website %}<a class="btn btn-primary btn-sm" href="{{ entry.website }}" role="button">website</a>{% endif %}
   {% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
-  <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#{{ entry.key | downcase }}bibtex" role="button">bibtex</a>
+  <a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
   <div class="collapse indent" id="{{ entry.key | downcase }}abstract">
     <div class="card card-body">
-      <br>{{ entry.abstract }}
+      <br><b>Abstract: </b>{{ entry.abstract }}
       <hr>
-    </div>
-  </div>
-  <div class="collapse" id="{{ entry.key | downcase }}bibtex">
-    <div class="card card-body">
-      <pre>{{ entry.bibtex }}</pre>
     </div>
   </div>
 </div>
@@ -68,16 +58,11 @@
   {% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
   {% if entry.slides %}<a class="btn btn-primary btn-sm" href="{{ entry.slides }}" role="button">slides</a>{% endif %}
   {% if entry.poster %}<a class="btn btn-primary btn-sm" href="{{ entry.poster }}" role="button">poster</a>{% endif %}
-  <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#{{ entry.key | downcase }}bibtex" role="button">bibtex</a>
+  <a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
   <div class="collapse indent" id="{{ entry.key | downcase }}abstract">
     <div class="card card-body">
-      <br>{{ entry.abstract }}
+      <br><b>Abstract: </b>{{ entry.abstract }}
       <hr>
-    </div>
-  </div>
-  <div class="collapse" id="{{ entry.key | downcase }}bibtex">
-    <div class="card card-body">
-      <pre>{{ entry.bibtex }}</pre>
     </div>
   </div>
 </div>
@@ -93,13 +78,6 @@
 <authors>{{ reference }}</authors><br>
 <publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year><br>
 {% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
-<a class="btn btn-primary btn-sm" data-toggle="collapse" href="#{{ entry.key | downcase }}" role="button">bibtex</a>
-<div class="collapse" id="{{ entry.key | downcase }}">
-  <div class="card card-body">
-    <pre>{{ entry.bibtex }}</pre>
-  </div>
-</div>
+<a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
 </entry>
 {% endif %}
-
-

@@ -46,5 +46,9 @@ scholar:
   sort_by: year
   order: descending
 
+  details_dir:    bibliography
+  details_layout: bibtex2.html
+  details_link: " "
+
   query: "@*"
 
