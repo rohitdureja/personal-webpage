@@ -66,6 +66,34 @@
 
 <ol class="bibliography"><li>
 <entry>
+<a href="https://doi.org/10.23919%2Ffmcad.2019.8894265"><pubtitle>Accelerating Parallel Verification via Complementary Property Partitioning and Strategy Exploration</pubtitle></a><br />
+<authors><span id="DBKWR20">Rohit Dureja, Jason Baumgartner, Robert Kanzelman, Mark Williams, and Kristin Y. Rozier</span></authors><br />
+<venue>Proceedings of Formal Methods in Computer-Aided Design (FMCAD)</venue>, <year>2020</year><br />
+<div id="#dbkwr20">
+  <a class="btn btn-primary btn-sm dropdown" data-toggle="collapse" href="#dbkwr20abstract" role="button">abstract</a>
+  <a class="btn btn-primary btn-sm" href="../papers/DBKWR20.pdf" role="button">preprint</a>
+  
+  <a class="btn btn-primary btn-sm" href="http://temporallogic.org/research/FMCAD20/" role="button">website</a>
+  
+  <a class="btn btn-primary btn-sm" href="/bibliography/DBKWR20.html" role="button">bibtex</a>
+  <div class="collapse indent" id="dbkwr20abstract">
+    <div class="card card-body">
+      <br /><b>Abstract: </b>Industrial hardware verification tasks often require checking a large number of properties within a testbench. Verification tools often utilize parallelism to improve scalability, either in portfolio mode where different solver strategies run concurrently, or in partitioning mode where disjoint property subsets are verified independently. While most tools focus solely upon reducing end-to-end wall-time, reducing overall CPU-time is a comparably-important goal influencing power consumption, competition for available machines, and IT costs. Portfolio approaches often degrade into highly-redundant work across processes, where similar strategies address properties in nearly- identical order. Partitioning should take property affinity into account, atomically verifying high-affinity properties to minimize redundant work of applying identical strategies on individual properties with nearly-identical logic cones. We improve multi- property parallel verification with respect to both wall- and CPU-time. We extend affinity-based partitioning to guarantee complete utilization of available processes, with provable partition quality. We propose methods to minimize redundant computation, and dynamically optimize work distribution. We deploy our techniques in a sequential redundancy removal framework, using localization to solve non-inductive properties. Our techniques offer up to 3× speedup as demonstrated by extensive experiments.
+      <hr />
+    </div>
+  </div>
+</div>
+</entry>
+
+
+
+
+
+
+
+<a class="details" href="/bibliography/DBKWR20.html"> </a></li>
+<li>
+<entry>
 <a href="https://doi.org/10.23919%2Ffmcad.2019.8894265"><pubtitle>Boosting Verification Scalability via Structural Grouping and Semantic Partitioning of Properties</pubtitle></a><br />
 <authors><span id="DBIKR19">Rohit Dureja, Jason Baumgartner, Alexander Ivrii, Robert Kanzelman, and Kristin Y. Rozier</span></authors><br />
 <venue>Proceedings of Formal Methods in Computer-Aided Design (FMCAD)</venue>, <year>2019</year><br />
@@ -416,7 +444,7 @@ and discuss ongoing work and future research directions.
 </div>
 <hr>
 <div class="copyright">
-  Page last updated on 07/03/2020<br>
+  Page last updated on 07/04/2020<br>
 </div>
 </footer>
   </main>
