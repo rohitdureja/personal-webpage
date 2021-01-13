@@ -81,3 +81,16 @@
 <a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
 </entry>
 {% endif %}
+
+
+{% if entry.type == "thesis" %}
+<entry>
+{% if entry.url %}<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% else %}
+<pubtitle>{{ entry.title }}</pubtitle>{% endif %}
+<br>
+<authors>{{ reference }}</authors><br>
+<publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year><br>
+{% if entry.pdf %}<a class="btn btn-primary btn-sm" href="{{ entry.pdf }}" role="button">pdf</a>{% endif %}
+<a class="btn btn-primary btn-sm"  href="/bibliography/{{ entry.key }}.html" role="button">bibtex</a>
+</entry>
+{% endif %}

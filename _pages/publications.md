@@ -14,6 +14,10 @@ permalink: /publications/
 
 {% bibliography --style _styles/custom.csl --query @article  %}
 
+#### Theses
+
+{% bibliography --style _styles/custom.csl --query @thesis %}
+
 #### Workshops and Posters
 
 {% bibliography --style _styles/custom.csl --query @misc %}
