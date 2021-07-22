@@ -8,7 +8,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png" >
 
-  <title>Rohit Dureja, Ph.D. &bull; Publications</title>
+  <title>Rohit Dureja &bull; Publications</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +43,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span style="font-size:1.2em; color: #d5e6f5;" class="glyphicon glyphicon-menu-hamburger"></span>
       </button>
-      <a class="navbar-brand" href="/">Rohit Dureja, Ph.D.</a>
+      <a class="navbar-brand" href="/">Rohit Dureja</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -66,7 +66,38 @@
 
 <ol class="bibliography"><li>
 <entry>
-<a href="#"><pubtitle>Accelerating Parallel Verification via Complementary Property Partitioning and Strategy Exploration</pubtitle></a><br />
+<a href="#"><pubtitle>IC3 with Interal Signals</pubtitle></a><br />
+<authors><span id="DGIV21">Rohit Dureja, Arie Gurfinkel, Alexander Ivrii, and Yakir Vizel</span></authors><br />
+<venue>Proceedings of Formal Methods in Computer-Aided Design (FMCAD)</venue>, <year>2021</year><br />
+<div id="#dgiv21">
+  <a class="btn btn-primary btn-sm dropdown" data-toggle="collapse" href="#dgiv21abstract" role="button">abstract</a>
+  
+  
+  
+  
+  <a class="btn btn-primary btn-sm" href="/bibliography/DGIV21.html" role="button">bibtex</a>
+  <div class="collapse indent" id="dgiv21abstract">
+    <div class="card card-body">
+      <br /><b>Abstract: </b>IC3 is a highly-effective algorithm for formal hardware verification. It cleverly uses a SAT solver to compute an inductive invariant, an over-approximation of reachable states, of a hardware design. The invariant is computed in CNF as a conjunction of lemmas. This CNF representation over state variables, although efficient, leads to an obvious deficiency: IC3 is not effective for designs that do not have a concise CNF invariant over state variables. We show how to remedy this deficiency by extending traditional IC3 to learn invariants not only in terms of state variables, but also in terms of internal signals of the design. Our proposed method can learn significantly more compact invariants than IC3, while maintaining a highly-efficient CNF representation. We evaluate our technique on several industrial sequential equivalence checking (SEC) problems  from IBM, SEC problems derived from designs in the Hardware Model Checking Competition (HWMCC) and SEC problems from academia. In addition, we evaluate it on HWMCC benchmarks. IC3 with internal signals is efficient for SEC and outperforms traditional IC3 on an important class of benchmarks.
+      <hr />
+    </div>
+  </div>
+</div>
+</entry>
+
+
+
+
+
+
+
+
+
+
+<a class="details" href="/bibliography/DGIV21.html"> </a></li>
+<li>
+<entry>
+<a href="https://ieeexplore.ieee.org/document/9283641"><pubtitle>Accelerating Parallel Verification via Complementary Property Partitioning and Strategy Exploration</pubtitle></a><br />
 <authors><span id="DBKWR20">Rohit Dureja, Jason Baumgartner, Robert Kanzelman, Mark Williams, and Kristin Y. Rozier</span></authors><br />
 <venue>Proceedings of Formal Methods in Computer-Aided Design (FMCAD)</venue>, <year>2020</year><br />
 <div id="#dbkwr20">
@@ -249,7 +280,38 @@
 
 
 
-<a class="details" href="/bibliography/DR17a.html"> </a></li></ol>
+<a class="details" href="/bibliography/DR17a.html"> </a></li>
+<li>
+<entry>
+<a href="https://arc.aiaa.org/doi/10.2514/6.2017-3112"><pubtitle>A Case Study in Safety, Security, and Availability of Wireless-Enabled Aircraft Communication Networks</pubtitle></a><br />
+<authors><span id="DRR17">Rohit Dureja, Eric W. D. Rozier, and Kristin Y. Rozier</span></authors><br />
+<venue>Proceedings of AIAA Aviation Technology, Integration, and Operations Conference (AVIATION)</venue>, <year>2017</year><br />
+<div id="#drr17">
+  <a class="btn btn-primary btn-sm dropdown" data-toggle="collapse" href="#drr17abstract" role="button">abstract</a>
+  <a class="btn btn-primary btn-sm" href="../papers/DRR17.pdf" role="button">preprint</a>
+  <a class="btn btn-primary btn-sm" href="../papers/DRR17-slides.pdf" role="button">slides</a>
+  
+  
+  <a class="btn btn-primary btn-sm" href="/bibliography/DRR17.html" role="button">bibtex</a>
+  <div class="collapse indent" id="drr17abstract">
+    <div class="card card-body">
+      <br /><b>Abstract: </b>As the costs of fuel and maintenance increase and regulations on weight and environmental impact tighten, there is an increasing push to transition on-board aircraft networks to wireless, reducing weight, fuel, maintenance time, and pollution. We outline a candidate short-range hybrid wired/wireless network for aircraft on-board communications using the common ZigBee protocol and privacy-preserving search implemented as a secure publish/subscribe system using specially coded meta-data. Formally specifying safety and security properties and modeling the network in nuXmv enables verification and fault analysis via model checking and lays the groundwork for future certification avenues. We report on our experiments building and testing our candidate hybrid network and report on overhead and availability for encrypted and fault-tolerant communications, and propose a system that allows system designers to directly trade fault-tolerance for bandwidth, or vice-versa, in an encrypted privacy-preserving framework.
+      <hr />
+    </div>
+  </div>
+</div>
+</entry>
+
+
+
+
+
+
+
+
+
+
+<a class="details" href="/bibliography/DRR17.html"> </a></li></ol>
 
 <h4 id="journals">Journals</h4>
 
@@ -424,38 +486,6 @@ and discuss ongoing work and future research directions.
 
 
 <entry>
-<a href="https://arc.aiaa.org/doi/10.2514/6.2017-3112"><pubtitle>A Case Study in Safety, Security, and Availability of Wireless-Enabled Aircraft Communication Networks</pubtitle></a>
-<br />
-<authors><span id="DRR17">Rohit Dureja, Eric W. D. Rozier, and Kristin Y. Rozier</span></authors><br />
-<venue>Proceedings of AIAA Aviation Technology, Integration, and Operations Conference (AVIATION)</venue>, <year>2017</year><br />
-<div id="#drr17">
-  <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#drr17abstract" role="button">abstract</a>
-  <a class="btn btn-primary btn-sm" href="../papers/DRR17.pdf" role="button">preprint</a>
-  
-  <a class="btn btn-primary btn-sm" href="../papers/DRR17-slides.pdf" role="button">slides</a>
-  
-  <a class="btn btn-primary btn-sm" href="/bibliography/DRR17.html" role="button">bibtex</a>
-  <div class="collapse indent" id="drr17abstract">
-    <div class="card card-body">
-      <br /><b>Abstract: </b>As the costs of fuel and maintenance increase and regulations on weight and environmental impact tighten, there is an increasing push to transition on-board aircraft networks to wireless, reducing weight, fuel, maintenance time, and pollution. We outline a candidate short-range hybrid wired/wireless network for aircraft on-board communications using the common ZigBee protocol and privacy-preserving search implemented as a secure publish/subscribe system using specially coded meta-data. Formally specifying safety and security properties and modeling the network in nuXmv enables verification and fault analysis via model checking and lays the groundwork for future certification avenues. We report on our experiments building and testing our candidate hybrid network and report on overhead and availability for encrypted and fault-tolerant communications, and propose a system that allows system designers to directly trade fault-tolerance for bandwidth, or vice-versa, in an encrypted privacy-preserving framework.
-      <hr />
-    </div>
-  </div>
-</div>
-</entry>
-
-
-
-
-
-
-<a class="details" href="/bibliography/DRR17.html"> </a></li>
-<li>
-
-
-
-
-<entry>
 
 <pubtitle>Comparative Safety Analysis of Wireless Communication Networks in Avionics</pubtitle>
 <br />
@@ -526,7 +556,7 @@ and discuss ongoing work and future research directions.
   </div>
 </div>
 <div class="copyright">
-  Page last updated on 01/13/2021<br>
+  Page last updated on 07/22/2021<br>
 </div>
 </footer>
   </main>
