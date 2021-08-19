@@ -3,9 +3,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rohit Dureja
+title: Rohit Dureja, Ph.D.
 email: rohit.dureja@gmail.com
-description: Personal webpage of Rohit Dureja.
+description: Personal webpage of Dr. Rohit Dureja.
 baseurl: ""
 url: "http://www.rohitdureja.com"
 twitter: rohitdureja
