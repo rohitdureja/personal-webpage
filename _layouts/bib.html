@@ -3,7 +3,7 @@
 
 {% if entry.type == "inproceedings" %}
 <entry>
-<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a><br>
+<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% if entry.award %}<award>({{ entry.award }})</award>{% endif %}<br>
 <authors>{{ reference }}</authors><br>
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
 <div id="#{{ entry.key | downcase }}">
@@ -49,7 +49,7 @@
 <entry>
 {% if entry.url %}<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% else %}
 <pubtitle>{{ entry.title }}</pubtitle>{% endif %}
-<br>
+{% if entry.award %}<award>({{ entry.award }})</award>{% endif %}<br>
 <authors>{{ reference }}</authors><br>
 <venue>{{ entry.booktitle }}</venue>, <year>{{ entry.year }}</year><br>
 <div id="#{{ entry.key | downcase }}">
@@ -87,6 +87,7 @@
 <entry>
 {% if entry.url %}<a href="{{ entry.url }}"><pubtitle>{{ entry.title }}</pubtitle></a>{% else %}
 <pubtitle>{{ entry.title }}</pubtitle>{% endif %}
+{% if entry.award %}<award>({{ entry.award }})</award>{% endif %}
 <br>
 <authors>{{ reference }}</authors><br>
 <publisher>{{ entry.publisher }}</publisher>, <year>{{ entry.year }}</year><br>

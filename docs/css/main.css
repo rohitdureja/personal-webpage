@@ -82,6 +82,8 @@ entry pubtitle { color: #1e4d76; }
 
 entry venue { font-style: italic; }
 
+entry award { color: red; padding-left: 10px; font-weight: 900; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
