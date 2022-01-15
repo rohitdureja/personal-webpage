@@ -135,9 +135,10 @@ Journals
 author    = {Dureja, Rohit and Rozier, Kristin Y.},
 title     = {{Incremental Design-Space Model Checking via Resuable Reachable State Approximations}},
 journal   = {Formal Methods in System Design},
-year      = {(to appear)},
+year      = {2022},
 URL       = {#},
 abstract  = {The design of safety-critical systems often requires design space exploration: comparing several system models that differ in terms of design choices, capabilities, and implementations. Model checking can compare different models in such a set, however, it is continuously challenged by the state space explosion problem. Therefore, learning and reusing information from solving related models becomes very important for future checking efforts. For example, reusing variable ordering in BDD-based model checking leads to substantial performance improvement. In this paper, we present a SAT-based algorithm for checking a set of models. Our algorithm, FuseIC3, extends IC3 to minimize time spent in exploring the common state space between related models. Specifically, FuseIC3 accumulates artifacts from the sequence of over-approximated reachable states, called frames, from earlier runs when checking new models, albeit, after careful repair. It uses bidirectional reachability; forward reachability to repair frames, and IC3-type backward reachability to block predecessors to bad states. We extensively evaluate FuseIC3 over a large collection of challenging benchmarks. FuseIC3 is on-average up to 5.48× (median 1.75×) faster than checking each model individually, and up to 3.67× (median 1.72×) faster than the state-of-the-art incremental IC3 algorithm. Moreover, we evaluate the performance improvement of FuseIC3 by smarter ordering of models and property grouping using a linear-time hashing approach.},
+preprint = {../papers/DR22.pdf}
 }
 
 @article{DR20a,
