@@ -1,0 +1,141 @@
+---
+import { site } from '../lib/site';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = site.description } = Astro.props;
+const pageTitle = title ? `${site.title} | ${title}` : site.title;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <title>{pageTitle}</title>
+    <script is:inline>
+      (() => {
+        const themeKey = 'rohitdureja-theme';
+        const root = document.documentElement;
+        let theme = 'dark';
+
+        try {
+          const storedTheme = window.localStorage.getItem(themeKey);
+          if (storedTheme === 'light' || storedTheme === 'dark') {
+            theme = storedTheme;
+          }
+        } catch {
+          theme = 'dark';
+        }
+
+        root.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body class="theme-editorial">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">{site.title}</a>
+        <nav class="site-nav site-nav-desktop" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/publications/">Publications</a>
+          <button
+            type="button"
+            class="pill-link theme-toggle"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+          </button>
+        </nav>
+        <div class="site-header-actions site-nav-mobile">
+          <button
+            type="button"
+            class="pill-link theme-toggle"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+          </button>
+          <details class="site-nav-toggle">
+            <summary
+              class="site-nav-button"
+              aria-label="Toggle navigation"
+              aria-controls="site-navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </summary>
+            <nav id="site-navigation" class="site-nav" aria-label="Mobile primary">
+              <a href="/">Home</a>
+              <a href="/publications/">Publications</a>
+            </nav>
+          </details>
+        </div>
+      </header>
+      <main class="site-main">
+        <slot />
+      </main>
+    </div>
+    <script is:inline>
+      (() => {
+        const themeKey = 'rohitdureja-theme';
+        const root = document.documentElement;
+        const toggles = Array.from(document.querySelectorAll('[data-theme-toggle]'));
+
+        const getTheme = () => (root.dataset.theme === 'light' ? 'light' : 'dark');
+
+        const syncThemeControls = () => {
+          const theme = getTheme();
+          const nextTheme = theme === 'dark' ? 'light' : 'dark';
+
+          toggles.forEach((toggle) => {
+            const icon = toggle.querySelector('.theme-toggle-icon');
+            if (icon) {
+              icon.textContent = nextTheme === 'light' ? '☀' : '☾';
+            }
+
+            toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+            toggle.setAttribute(
+              'aria-label',
+              theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            );
+          });
+        };
+
+        const setTheme = (theme) => {
+          root.dataset.theme = theme;
+          try {
+            window.localStorage.setItem(themeKey, theme);
+          } catch {
+            // Ignore storage failures and keep the current session theme.
+          }
+          syncThemeControls();
+        };
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener('click', () => {
+            setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+          });
+        });
+
+        syncThemeControls();
+      })();
+    </script>
+  </body>
+</html>

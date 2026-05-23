@@ -1,0 +1,63 @@
+---
+import {
+  formatAuthors,
+  normalizeAssetPath,
+  publicationVenue,
+  type Publication
+} from '../lib/publications';
+
+interface Props {
+  publication: Publication;
+}
+
+const { publication } = Astro.props;
+const links = [
+  publication.preprint
+    ? { label: 'Preprint', href: normalizeAssetPath(publication.preprint) }
+    : null,
+  publication.pdf ? { label: 'PDF', href: normalizeAssetPath(publication.pdf) } : null,
+  publication.slides ? { label: 'Slides', href: normalizeAssetPath(publication.slides) } : null,
+  publication.website ? { label: 'Website', href: normalizeAssetPath(publication.website) } : null,
+  publication.poster ? { label: 'Poster', href: normalizeAssetPath(publication.poster) } : null,
+  { label: 'BibTeX', href: `/bibliography/${publication.key}/` }
+].filter(Boolean);
+---
+
+<article class="publication-card">
+  <div class="publication-heading">
+    <h3 class="publication-title">
+      {
+        publication.url ? (
+          <a href={publication.url}>{publication.title}</a>
+        ) : (
+          publication.title
+        )
+      }
+      {publication.award && <span class="award-tag">{publication.award}</span>}
+    </h3>
+    {publication.year && <span class="publication-year">{publication.year}</span>}
+  </div>
+  <p class="publication-authors">{formatAuthors(publication.author)}</p>
+  <p class="publication-meta">{publicationVenue(publication)}</p>
+  <div class="publication-footer">
+    <div class="publication-links">
+      {
+        publication.abstract && (
+          <div class="summary-details">
+            <button type="button" class="pill-link ai-summary-link">AI Summary</button>
+            <div class="abstract-panel">
+              <p>{publication.abstract}</p>
+            </div>
+          </div>
+        )
+      }
+      {
+        links.map((link) => (
+          <a class="pill-link" href={link?.href}>
+            {link?.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</article>

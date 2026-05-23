@@ -1,0 +1,26 @@
+---
+import PublicationCard from '../../components/PublicationCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { publicationSections } from '../../lib/publications';
+---
+
+<BaseLayout title="Publications">
+  <section class="page-header">
+    <p class="eyebrow">Research Output</p>
+    <h1 class="page-title">Publications</h1>
+    <p class="page-intro">
+      Peer-reviewed papers, journal articles, workshops, posters, theses, and books.
+    </p>
+  </section>
+
+  {
+    publicationSections.map((section) => (
+      <section class="publications-section">
+        <h2>{section.title}</h2>
+        <div class="publications-grid">
+          {section.items.map((publication) => <PublicationCard publication={publication} />)}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>

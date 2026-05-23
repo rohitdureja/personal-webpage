@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/HomeHero.astro';
+---
+
+<BaseLayout title="Home">
+  <HomeHero />
+
+  <section class="content-card">
+    <h2>About Me</h2>
+    <p>
+      I am a member of technical staff at AMD in Austin, where I work on formal verification of
+      microprocessor designs. My work focuses on scalable verification flows, model checking, and tooling
+      for industrial hardware verification.
+    </p>
+    <p>
+      Before AMD, I was a research and development engineer at IBM, where I worked on formal hardware
+      verification algorithms and tools.
+    </p>
+    <p>
+      I received my PhD in Computer Science from Iowa State University, where I worked in the
+      <a href="http://laboratory.temporallogic.org/">Laboratory for Temporal Logic</a> and was advised by
+      <a href="https://www.aere.iastate.edu/kyrozier/">Kristin Y. Rozier</a> and
+      <a href="http://web.cs.iastate.edu/~ciardo/">Gianfranco Ciardo</a>. I also earned an M.S. in Embedded
+      Systems from the University of Pennsylvania and a B.E. from the University of Delhi.
+    </p>
+  </section>
+</BaseLayout>

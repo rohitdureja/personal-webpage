@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPublicationByKey, getPublications } from '../../lib/publications';
+
+export function getStaticPaths() {
+  return getPublications().map((publication) => ({
+    params: { key: publication.key }
+  }));
+}
+
+const { key } = Astro.params;
+const publication = getPublicationByKey(key ?? '');
+
+if (!publication) {
+  throw new Error(`Unknown publication key: ${key}`);
+}
+---
+
+<BaseLayout title={`${publication.key} BibTeX`}>
+  <section class="page-header">
+    <p class="eyebrow">Citation</p>
+    <h1 class="page-title">{publication.key}</h1>
+    <p class="page-intro">BibTeX entry for this publication.</p>
+  </section>
+
+  <section class="bibtex-card">
+    <pre>{publication.bibtex}</pre>
+  </section>
+</BaseLayout>
