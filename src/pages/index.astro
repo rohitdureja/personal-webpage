@@ -7,22 +7,41 @@ import HomeHero from '../components/HomeHero.astro';
   <HomeHero />
 
   <section class="content-card">
-    <h2>Biography</h2>
+    <h2 class="section-heading section-heading-icon">
+      <span class="section-heading-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M12 3.5a4.5 4.5 0 0 1 4.5 4.5c0 2.49-2.01 4.5-4.5 4.5S7.5 10.49 7.5 8 9.51 3.5 12 3.5Z" />
+          <path d="M4.5 20.5a7.5 7.5 0 0 1 15 0" />
+        </svg>
+      </span>
+      <span>Biography</span>
+    </h2>
     <p>
-      I am a member of technical staff at AMD in Austin, where I work on formal verification of
-      microprocessor designs. My work focuses on scalable verification flows, model checking, and tooling
-      for industrial hardware verification.
+      Rohit Dureja is a computer scientist specializing in formal methods, model checking, and hardware
+      verification. He works at <a class="inline-arrow-link" href="https://www.amd.com/">
+        AMD<span aria-hidden="true">↗</span>
+      </a> in Austin on formal verification of microprocessor designs, scalable
+      verification flows, and industrial CPU verification tooling.
     </p>
     <p>
-      Before AMD, I was a research and development engineer at IBM, where I worked on formal hardware
-      verification algorithms and tools.
+      Previously, he worked at <a class="inline-arrow-link" href="https://www.ibm.com/">
+        IBM<span aria-hidden="true">↗</span>
+      </a> on formal hardware verification algorithms and model-checking engines for industrial
+      applications.
     </p>
     <p>
-      I received my PhD in Computer Science from Iowa State University, where I worked in the
-      <a href="http://laboratory.temporallogic.org/">Laboratory for Temporal Logic</a> and was advised by
-      <a href="https://www.aere.iastate.edu/kyrozier/">Kristin Y. Rozier</a> and
-      <a href="http://web.cs.iastate.edu/~ciardo/">Gianfranco Ciardo</a>. I also earned an M.S. in Embedded
-      Systems from the University of Pennsylvania and a B.E. from the University of Delhi.
+      He received his Ph.D. in Computer Science from
+      <a class="inline-arrow-link" href="https://www.iastate.edu/">
+        Iowa State<span aria-hidden="true">↗</span>
+      </a>. His doctoral thesis focused on scalable model checking for large design spaces. He also holds a
+      master's degree in Embedded Systems from
+      <a class="inline-arrow-link" href="https://www.upenn.edu/">
+        Penn<span aria-hidden="true">↗</span>
+      </a>
+      and a bachelor's degree in Control Engineering from
+      <a class="inline-arrow-link" href="https://www.du.ac.in/">
+        Delhi University<span aria-hidden="true">↗</span>
+      </a>.
     </p>
   </section>
 </BaseLayout>
