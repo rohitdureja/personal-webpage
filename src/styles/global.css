@@ -872,10 +872,8 @@ html[data-theme='dark'] .theme-toggle-track {
   justify-content: flex-start;
   margin-top: 0;
   position: relative;
-  overflow-x: auto;
-  overflow-y: visible;
+  overflow: visible;
   max-width: 100%;
-  padding-bottom: 0.15rem;
 }
 
 .pill-link {
