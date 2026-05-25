@@ -1193,29 +1193,30 @@ html[data-theme='dark'] .theme-toggle-track {
     max-width: calc(100vw - 3.8rem);
   }
 
-  .publication-card .summary-details,
   .publication-card .publication-links {
-    width: 100%;
-  }
-
-  .publication-card .publication-links {
+    display: flex;
     flex-wrap: nowrap;
-    width: max-content;
-    min-width: 100%;
+    width: 100%;
+    min-width: 0;
     overflow: visible;
     align-self: flex-start;
     padding-bottom: 0;
   }
 
+  .publication-card .summary-details {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
   .publication-card .pill-link {
-    padding: 0.24rem 0.44rem;
-    font-size: 0.72rem;
+    padding: 0.26rem 0.48rem;
+    font-size: 0.73rem;
   }
 
   .publication-card .abstract-panel {
     left: 0;
-    width: min(100%, calc(100vw - 3.8rem));
-    max-width: calc(100vw - 3.8rem);
+    width: min(28rem, calc(100vw - 2rem));
+    max-width: min(28rem, calc(100vw - 2rem));
   }
 
   .site-nav-toggle {
