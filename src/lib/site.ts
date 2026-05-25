@@ -1,5 +1,5 @@
 export const site = {
-  title: 'Rohit Dureja, Ph.D.',
+  title: 'Rohit Dureja, PhD',
   description: 'Personal webpage of Dr. Rohit Dureja.',
   email: 'rohit.dureja@gmail.com',
   github: 'https://github.com/rohitdureja',
