@@ -1,10 +1,7 @@
 export const site = {
   title: 'Rohit Dureja, PhD',
   description: 'Personal webpage of Dr. Rohit Dureja.',
-  email: 'rohit.dureja@gmail.com',
-  github: 'https://github.com/rohitdureja',
-  facebook: 'https://www.facebook.com/rohit.dureja',
-  twitter: 'https://twitter.com/rohitdureja'
+  email: 'rohit.dureja@gmail.com'
 };
 
 export const role = {

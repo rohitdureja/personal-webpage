@@ -1,6 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/HomeHero.astro';
+import {
+  getPublicationByKey,
+  publicationVenue
+} from '../lib/publications';
+
+const selectedPublicationKeys = [
+  'RozierDIJNSTV24',
+  'DGIV21',
+  'DBIKR19',
+  'DR18',
+  'DR17a'
+];
+const selectedPublications = selectedPublicationKeys
+  .map((key) => getPublicationByKey(key))
+  .filter((publication) => publication !== undefined);
 ---
 
 <BaseLayout title="Home">
@@ -26,8 +41,8 @@ import HomeHero from '../components/HomeHero.astro';
     <p>
       Previously, he worked at <a class="inline-arrow-link" href="https://www.ibm.com/">
         IBM<span aria-hidden="true">↗</span>
-      </a> on formal hardware verification algorithms and model-checking engines for industrial
-      applications.
+      </a> on formal verification algorithms and model-checking engines for hardware design
+      verification.
     </p>
     <p>
       He received his PhD in Computer Science from
@@ -44,4 +59,158 @@ import HomeHero from '../components/HomeHero.astro';
       </a>.
     </p>
   </section>
+
+  <section class="content-card selected-publications-card">
+    <div class="selected-publications-header">
+      <div>
+        <h2 class="section-heading section-heading-icon">
+          <span class="section-heading-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M6.5 4.5h8.25L18.5 8.25V19.5h-12v-15Z" />
+              <path d="M14.5 4.75V8.5h3.75" />
+              <path d="M9 12h6" />
+              <path d="M9 15.5h4.5" />
+            </svg>
+          </span>
+          <span>Selected Publications</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="selected-publications-list">
+      {
+        selectedPublications.map((publication) => {
+          const summaryPanelId = `selected-summary-${publication.key.replace(/[^a-z0-9_-]/gi, '-')}`;
+
+          return (
+            <article class="selected-publication-item">
+              <div class="selected-publication-year">{publication.year}</div>
+              <div class="selected-publication-body">
+                <h3>
+                  {publication.url ? (
+                    <a href={publication.url}>{publication.title}</a>
+                  ) : (
+                    publication.title
+                  )}
+                  {publication.award && <span class="award-tag">{publication.award}</span>}
+                </h3>
+                <p>{publicationVenue(publication)}</p>
+                {
+                  publication.abstract && (
+                    <div class="publication-links selected-publication-links">
+                      <div class="summary-details">
+                        <button
+                          type="button"
+                          class="pill-link ai-summary-link"
+                          aria-expanded="false"
+                          aria-controls={summaryPanelId}
+                        >
+                          Summary
+                        </button>
+                        <div
+                          id={summaryPanelId}
+                          class="abstract-panel"
+                          role="dialog"
+                          aria-label={`Summary for ${publication.title}`}
+                        >
+                          <button type="button" class="summary-close-button" aria-label="Close summary">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                              <path d="M6 6l12 12" />
+                              <path d="M18 6 6 18" />
+                            </svg>
+                          </button>
+                          <p>{publication.abstract}</p>
+                          <p class="summary-disclaimer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                              <path d="M12 3.5 13.4 8l4.1 1.5-4.1 1.5L12 15.5 10.6 11 6.5 9.5 10.6 8 12 3.5Z" />
+                              <path d="M18 14.5 18.7 17l2.3.8-2.3.8L18 21l-.7-2.4-2.3-.8 2.3-.8.7-2.5Z" />
+                            </svg>
+                            AI-generated
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                }
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+    <div class="selected-publications-footer">
+      <a class="button button-primary selected-publications-action" href="/publications/">
+        View all publications
+      </a>
+    </div>
+  </section>
 </BaseLayout>
+
+<script>
+  const summaryDetails = Array.from(document.querySelectorAll('.summary-details'));
+
+  const closeSummary = (summary: Element, returnFocus = false) => {
+    const button = summary.querySelector('.ai-summary-link');
+
+    summary.classList.remove('is-open');
+    button?.setAttribute('aria-expanded', 'false');
+
+    if (returnFocus && button instanceof HTMLElement) {
+      button.focus();
+    }
+  };
+
+  const closeSummaries = (except?: Element) => {
+    summaryDetails.forEach((summary) => {
+      if (summary !== except) {
+        closeSummary(summary);
+      }
+    });
+  };
+
+  summaryDetails.forEach((summary) => {
+    const button = summary.querySelector('.ai-summary-link');
+    const closeButton = summary.querySelector('.summary-close-button');
+
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    button.addEventListener('click', () => {
+      const shouldOpen = !summary.classList.contains('is-open');
+
+      closeSummaries(summary);
+      summary.classList.toggle('is-open', shouldOpen);
+      button.setAttribute('aria-expanded', String(shouldOpen));
+    });
+
+    closeButton?.addEventListener('click', () => {
+      closeSummary(summary, true);
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Node)) {
+      return;
+    }
+
+    if (!summaryDetails.some((summary) => summary.contains(target))) {
+      closeSummaries();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') {
+      return;
+    }
+
+    const openSummary = summaryDetails.find((summary) => summary.classList.contains('is-open'));
+
+    if (openSummary) {
+      event.preventDefault();
+      closeSummary(openSummary, true);
+    }
+  });
+</script>

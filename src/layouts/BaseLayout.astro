@@ -43,7 +43,13 @@ const pageTitle = title ? `${site.title} | ${title}` : site.title;
       <header class="site-header">
         <a class="site-brand" href="/">{site.title}</a>
         <nav class="site-nav site-nav-desktop" aria-label="Primary">
-          <a href="/">Home</a>
+          <a class="site-nav-icon-link" href="/" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4.5 11.2 12 4.5l7.5 6.7" />
+              <path d="M6.5 10.5v9h11v-9" />
+              <path d="M10 19.5v-5h4v5" />
+            </svg>
+          </a>
           <a href="/publications/">Publications</a>
           <button
             type="button"
@@ -59,6 +65,13 @@ const pageTitle = title ? `${site.title} | ${title}` : site.title;
           </button>
         </nav>
         <div class="site-header-actions site-nav-mobile">
+          <a class="site-nav-icon-link mobile-home-link" href="/" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4.5 11.2 12 4.5l7.5 6.7" />
+              <path d="M6.5 10.5v9h11v-9" />
+              <path d="M10 19.5v-5h4v5" />
+            </svg>
+          </a>
           <button
             type="button"
             class="pill-link theme-toggle"
