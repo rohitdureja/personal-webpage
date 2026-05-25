@@ -11,6 +11,7 @@ interface Props {
 }
 
 const { publication } = Astro.props;
+const summaryPanelId = `summary-${publication.key.replace(/[^a-z0-9_-]/gi, '-')}`;
 const links = [
   publication.preprint
     ? { label: 'Preprint', href: normalizeAssetPath(publication.preprint) }
@@ -44,8 +45,20 @@ const links = [
       {
         publication.abstract && (
           <div class="summary-details">
-            <button type="button" class="pill-link ai-summary-link">AI Summary</button>
-            <div class="abstract-panel">
+            <button
+              type="button"
+              class="pill-link ai-summary-link"
+              aria-expanded="false"
+              aria-controls={summaryPanelId}
+            >
+              AI Summary
+            </button>
+            <div
+              id={summaryPanelId}
+              class="abstract-panel"
+              role="dialog"
+              aria-label={`AI summary for ${publication.title}`}
+            >
               <p>{publication.abstract}</p>
             </div>
           </div>
@@ -61,3 +74,67 @@ const links = [
     </div>
   </div>
 </article>
+
+<script>
+  const summaryDetails = Array.from(document.querySelectorAll('.summary-details'));
+
+  const closeSummary = (summary: Element, returnFocus = false) => {
+    const button = summary.querySelector('.ai-summary-link');
+
+    summary.classList.remove('is-open');
+    button?.setAttribute('aria-expanded', 'false');
+
+    if (returnFocus && button instanceof HTMLElement) {
+      button.focus();
+    }
+  };
+
+  const closeSummaries = (except?: Element) => {
+    summaryDetails.forEach((summary) => {
+      if (summary !== except) {
+        closeSummary(summary);
+      }
+    });
+  };
+
+  summaryDetails.forEach((summary) => {
+    const button = summary.querySelector('.ai-summary-link');
+
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    button.addEventListener('click', () => {
+      const shouldOpen = !summary.classList.contains('is-open');
+
+      closeSummaries(summary);
+      summary.classList.toggle('is-open', shouldOpen);
+      button.setAttribute('aria-expanded', String(shouldOpen));
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Node)) {
+      return;
+    }
+
+    if (!summaryDetails.some((summary) => summary.contains(target))) {
+      closeSummaries();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') {
+      return;
+    }
+
+    const openSummary = summaryDetails.find((summary) => summary.classList.contains('is-open'));
+
+    if (openSummary) {
+      event.preventDefault();
+      closeSummary(openSummary, true);
+    }
+  });
+</script>

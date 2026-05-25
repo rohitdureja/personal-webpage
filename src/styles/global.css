@@ -686,16 +686,14 @@ html[data-theme='dark'] .theme-toggle-track {
   z-index: -1;
 }
 
-.summary-details:hover .abstract-panel,
-.summary-details:focus-within .abstract-panel {
+.summary-details.is-open .abstract-panel {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-.publication-card:has(.summary-details:hover),
-.publication-card:has(.summary-details:focus-within) {
+.publication-card:has(.summary-details.is-open) {
   z-index: 100;
 }
 
