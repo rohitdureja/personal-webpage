@@ -1,5 +1,5 @@
 ---
-import { role, site } from '../lib/site';
+import { site } from '../lib/site';
 
 const socialLinks = [
   {
@@ -30,11 +30,11 @@ const socialLinks = [
     <img class="hero-image" src="/images/portrait.jpg" alt="Portrait of Rohit Dureja" />
   </div>
   <div class="hero-copy">
-    <p class="eyebrow">Formal Methods</p>
     <h1>{site.title}</h1>
-    <p class="role-line">{role.jobTitle}</p>
-    <p class="meta-line">{role.team}</p>
-    <p class="meta-line">{role.company}</p>
+    <p class="eyebrow keyword-stack">
+      <span>Formal Methods · Model Checking</span>
+      <span>Hardware Verification · Design Automation</span>
+    </p>
     <div class="hero-actions">
       <a class="button button-primary" href="/publications/">View Publications</a>
     </div>
