@@ -13,6 +13,7 @@ interface Props {
 const { publication } = Astro.props;
 const summaryPanelId = `summary-${publication.key.replace(/[^a-z0-9_-]/gi, '-')}`;
 const links = [
+  publication.key === 'Dur20' ? { label: 'Abstract', href: '/thesis-abstract/' } : null,
   publication.preprint
     ? { label: 'Preprint', href: normalizeAssetPath(publication.preprint) }
     : null,

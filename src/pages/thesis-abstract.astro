@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  getPublicationByKey,
+  normalizeAssetPath,
+  publicationVenue
+} from '../lib/publications';
+
+const thesis = getPublicationByKey('Dur20');
+
+if (!thesis) {
+  throw new Error('Unable to find thesis publication Dur20');
+}
+---
+
+<BaseLayout title="Thesis Abstract">
+  <section class="page-header">
+    <p class="eyebrow">PhD Thesis</p>
+    <h1 class="page-title">{thesis.title}</h1>
+    <p class="page-intro">{publicationVenue(thesis)} · {thesis.year}</p>
+  </section>
+
+  <section class="content-card thesis-abstract-card">
+    <h2 class="section-heading section-heading-icon">
+      <span class="section-heading-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5.5 4.5h9.25L18.5 8.25V19.5h-13v-15Z" />
+          <path d="M14.5 4.75V8.5h3.75" />
+          <path d="M8.5 12h7" />
+          <path d="M8.5 15.5h5.5" />
+        </svg>
+      </span>
+      <span>Abstract</span>
+    </h2>
+
+    <p class="thesis-abstract-text">{thesis.abstract}</p>
+
+    <div class="thesis-abstract-actions">
+      {
+        thesis.pdf && (
+          <a class="button button-primary" href={normalizeAssetPath(thesis.pdf)}>
+            View thesis PDF
+          </a>
+        )
+      }
+      <a class="button button-secondary" href="/publications/">
+        Back to publications
+      </a>
+    </div>
+  </section>
+</BaseLayout>

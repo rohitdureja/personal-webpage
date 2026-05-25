@@ -158,8 +158,8 @@ img {
 
 .site-brand {
   font-size: 1.04rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 560;
+  letter-spacing: 0;
   text-decoration: none;
 }
 
@@ -405,7 +405,8 @@ html[data-theme='dark'] .theme-toggle-track {
   font-size: 2.6rem;
   line-height: 1.06;
   font-family: var(--font-display);
-  letter-spacing: -0.05em;
+  font-weight: 560;
+  letter-spacing: 0;
 }
 
 .page-title {
@@ -722,6 +723,42 @@ html[data-theme='dark'] .theme-toggle-track {
 
 .selected-publication-body .selected-publication-links {
   margin-top: 0.6rem;
+}
+
+.thesis-abstract-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.thesis-abstract-card::before {
+  content: '';
+  position: absolute;
+  inset: -7rem -6rem auto auto;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(121, 184, 255, 0.14), transparent 70%);
+  pointer-events: none;
+}
+
+.thesis-abstract-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.thesis-abstract-text {
+  max-width: 72ch;
+  margin: 0.25rem 0 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.thesis-abstract-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
 }
 
 .page-header {
