@@ -18,9 +18,15 @@ const links = [
     ? { label: 'Preprint', href: normalizeAssetPath(publication.preprint) }
     : null,
   publication.pdf ? { label: 'PDF', href: normalizeAssetPath(publication.pdf) } : null,
-  publication.slides ? { label: 'Slides', href: normalizeAssetPath(publication.slides) } : null,
-  publication.website ? { label: 'Website', href: normalizeAssetPath(publication.website) } : null,
-  publication.poster ? { label: 'Poster', href: normalizeAssetPath(publication.poster) } : null,
+  publication.type === 'misc' && publication.slides
+    ? { label: 'Slides', href: normalizeAssetPath(publication.slides) }
+    : null,
+  publication.type === 'misc' && publication.website
+    ? { label: 'Website', href: normalizeAssetPath(publication.website) }
+    : null,
+  publication.type === 'misc' && publication.poster
+    ? { label: 'Poster', href: normalizeAssetPath(publication.poster) }
+    : null,
   { label: 'BibTeX', href: `/bibliography/${publication.key}/` }
 ].filter(Boolean);
 ---
