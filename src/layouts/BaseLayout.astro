@@ -9,6 +9,7 @@ interface Props {
 
 const { title, description = site.description } = Astro.props;
 const pageTitle = title ? `${site.title} | ${title}` : site.title;
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -104,6 +105,11 @@ const pageTitle = title ? `${site.title} | ${title}` : site.title;
       <main class="site-main">
         <slot />
       </main>
+      <footer class="site-footer" aria-label="Site footer">
+        <div class="site-footer-copy">
+          <p>© {currentYear} {site.title}</p>
+        </div>
+      </footer>
     </div>
     <script is:inline>
       (() => {
